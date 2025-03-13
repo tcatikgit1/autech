@@ -1,0 +1,15 @@
+// * Front Pages : Common Styles for ex: Navbar, footer etc...
+// *******************************************************************************
+
+@use '../_bootstrap-extended/include' as light;
+@use '../_bootstrap-extended/include-dark' as dark;
+@import '../_custom-variables/pages';
+
+@import 'front/profesiones-section.scss';
+@import 'front/_anuncios-destacados-section';
+@import 'front/_autonomos-destacados-sections';
+
+// Color de fondo de la lupa de busqueda
+.bg-gray-search{
+    background-color: #DBDBDB;
+}

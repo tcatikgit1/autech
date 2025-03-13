@@ -1,0 +1,45 @@
+// * Front Pages : Common Styles for ex: Navbar, footer etc...
+// *******************************************************************************
+
+@use '../_bootstrap-extended/include' as light;
+@use '../_bootstrap-extended/include-dark' as dark;
+@import '../_custom-variables/pages';
+
+// Anuncio Card
+@import 'front/anuncio-card-destacado';
+@import 'front/autonomo-card';
+@import 'front/anuncio-card-search';
+
+.bg-gray-search{
+    background-color: #DBDBDB;
+}
+
+#skeleton-listado-general {
+
+    .skeleton-listado-general-container {
+        display: inline-block; /* Para que se alineen en línea */
+    }
+
+    .skeleton-img,
+    .skeleton-title,
+    .skeleton-description,
+    .skeleton-btn,
+    .skeleton-icon {
+        animation: skeleton-loading 1.5s infinite;
+    }
+
+    @keyframes skeleton-loading {
+        0% {
+            background-color: #e0e0e0;
+        }
+
+        50% {
+            background-color: #f5f5f5;
+        }
+
+        100% {
+            background-color: #e0e0e0;
+        }
+    }
+}
+

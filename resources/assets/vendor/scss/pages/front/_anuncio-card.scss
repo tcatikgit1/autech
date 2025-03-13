@@ -1,0 +1,88 @@
+:root {
+    --border-color-card: #E6E6E6;
+    --badge-bg-color-destacado: #f8e71c;
+    // --badge-verificado-color: #52CFC4;
+}
+
+.anuncio-card {
+
+    position: relative; /* Asegura que los elementos hijos con position:absolute estén posicionados correctamente */
+    padding: 0;
+    cursor: pointer;
+
+    .avatar {
+        max-height: 12rem;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card-body {
+        border: 1px solid var(--border-color-card);
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .btn {
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+    }
+
+    .card-title {
+        margin-bottom: 0;
+        font-weight: 800;
+        line-height: 1.4rem;
+    }
+
+    .card-text {
+        font-weight: 100;
+    }
+
+    .icon-circle {
+        width: 40px; /* Tamaño del círculo */
+        height: 40px;
+        border-radius: 50%; /* Hace que el contenedor sea circular */
+        background-color: #eafaf9; /* Color de fondo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-circle svg {
+        transition: transform 0.3s ease;  /* Animación suave de transformación */
+    }
+
+    .icon-circle:hover svg {
+        transform: scale(1.2); /* Aumenta el tamaño del SVG en un 20% */
+    }
+
+    .badge-destacado {
+        position: absolute;
+        background-color: var(--badge-bg-color-destacado); /* Color de fondo de la etiqueta "Destacado" */
+        color: #000; /* Color de texto */
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+        border-radius: 0.25rem;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+
+    .badge-verificado {
+        position: absolute;
+        background-color: transparent; /* Fondo transparente para solo mostrar el ícono */
+        padding: 0.25rem;
+        border-radius: 50%; /* Hace que sea circular */
+        z-index: 1;
+    }
+
+    .badge-verificado svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .card-text {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
