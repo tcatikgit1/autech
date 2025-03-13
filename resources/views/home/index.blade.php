@@ -4,9 +4,8 @@
 
 
 
-    {{-- @include('header')
-    @include('servicios')
-    @include('cyberseguridad') --}}
+     @include('layouts.sections.content.information')
+
 @endsection
 
 @section('page-style')
