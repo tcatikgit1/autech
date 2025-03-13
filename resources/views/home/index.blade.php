@@ -9,8 +9,7 @@
     @include('cyberseguridad') --}}
 @endsection
 
-@section('page-script')
-    @vite([
-    // 'resources/js/web/home/index.js'
+@section('page-style')
+    @vite(['resources/scss/information.scss'
 ])
 @endsection
