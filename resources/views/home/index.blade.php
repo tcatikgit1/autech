@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+    @include('layouts/sections/content/banner')
 
     {{-- @include('header')
     @include('servicios')
