@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+    @include('layouts/sections/content/banner')
 
      @include('layouts.sections.content.information')
 

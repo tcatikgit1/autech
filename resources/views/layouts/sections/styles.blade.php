@@ -25,7 +25,8 @@
     'resources/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.scss',
     'resources/assets/vendor/libs/typeahead-js/typeahead.scss',
     'resources/scss/navbar.scss',
-    'resources/scss/footer.scss'
+    'resources/scss/footer.scss',
+    'resources/scss/banner.scss',
 ])
 @yield('vendor-style')
 
