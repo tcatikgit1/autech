@@ -35,34 +35,27 @@
     border-radius: 10px; /* Bordes redondeados */
 }
 
-/* Contenedor de la imagen y el texto */
-.carousel-image-container {
-    position: relative;
-    width: 100%;
-}
-
 /* Estilo para los textos dentro de las imágenes */
 .carousel-text-container {
     position: absolute;
     bottom: 0; /* Coloca el texto pegado a la parte inferior */
     left: 0; /* Alinea el texto al inicio de la imagen */
-    width: 100%;  /* El contenedor de texto ocupa el 100% del ancho de la imagen */
+    width: 100%; /* Asegura que el contenedor de texto ocupe todo el ancho de la imagen */
     color: white;
-    padding: 10px 10px;  /* Añadir padding para que el texto no esté pegado a los bordes */
+    padding: 10px;  /* Añadir padding para que el texto no esté pegado a los bordes */
     background: rgba(0, 0, 0, 0.5); /* Fondo translúcido para mejorar visibilidad */
     border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
-    /* Se elimina la alineación centrada, para que el texto se quede a la izquierda */
 }
 
 /* Reducir el tamaño del texto dentro de las imágenes */
 .carousel-text-container h1 {
     font-size: 1.2rem; /* Reducir el tamaño del título */
-    margin: 0;
+    //margin: 0;
 }
 
 .carousel-text-container h4 {
     font-size: 0.9rem; /* Reducir el tamaño del subtítulo */
-    margin: 5px 0 0 0;  /* Ajustar el espacio entre título y subtítulo */
+    //margin: 0;  /* Ajustar el espacio entre título y subtítulo */
 }
 
 /* Espaciado entre las imágenes */
