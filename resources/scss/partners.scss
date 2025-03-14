@@ -1,19 +1,23 @@
 .carousel {
     display: flex;
-    width: 100%;
+    width: 97%;
     overflow: hidden;
     position: relative;
     align-items: center;
+    padding-top: 2rem;
+    padding-right: 2rem;
 }
+
 .carousel-track {
     display: flex;
     transition: transform 1s ease;
-    width: 92%;
+    width: 93%;
 }
+
 .carousel img {
-    flex: 0 0 25%;
+    flex: 0 0 25%; /* Esto garantiza que las imágenes ocupen el 25% del contenedor */
     width: auto;
     height: 150px;
     object-fit: contain;
-    padding: 0 10px;
+    padding: 0 20px;
 }

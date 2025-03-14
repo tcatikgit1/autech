@@ -1,0 +1,119 @@
+.contacto {
+    display: flex;
+    gap: 30px;
+    width: 97%;
+    height: 40vh; /* Controla la altura del contenedor */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 40px;
+}
+
+/* Estilo para el formulario */
+.formulario {
+    width: 40%;
+    max-width: 600px;
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.formulario textarea,
+#nombre,
+#email {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de envío */
+.formulario button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #00c853;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para el contenedor de WhatsApp y la información adicional */
+.contacto-info {
+    width: 60%; /* La segunda columna ocupa el 60% del espacio */
+    height: 100%; /* Asegura que la columna ocupe toda la altura */
+    background-image: url('/public/assets/img/whatsapp.png'); /* Cambia la ruta de la imagen si es necesario */
+    background-size: 40%; /* Hace que la imagen de fondo sea más pequeña */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: rgb(0, 0, 0); /* Asegura que el texto sea visible sobre el fondo */
+}
+
+/* Estilo para el contenedor de WhatsApp */
+.whatsapp {
+    text-align: left;
+        margin-left: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    max-width: 300px;
+}
+
+.whatsapp a {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #25D366;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+    width: 50%;
+}
+
+.whatsapp a i {
+    margin-right: 10px;
+}
+
+.whatsapp img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-container label {
+    font-size: 0.8rem;
+}
+
+.checkbox-container input {
+    margin-top: 0.5rem;
+}
+
+.checkbox-container a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline;
+}

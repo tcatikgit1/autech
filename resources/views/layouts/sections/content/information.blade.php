@@ -1,7 +1,4 @@
-@section('page-style')
-    @vite(['resources/scss/information.scss'])
-@endsection
-<div class="container">
+<div class="information">
     <div class="text">
         <h3>
             📋 Conócenos
@@ -21,3 +18,4 @@
         <img src="{{'assets/img/img2.png'}}" alt="img2">
         <img src="{{'assets/img/img4.png'}}" alt="img4">
     </div>
+</div>
