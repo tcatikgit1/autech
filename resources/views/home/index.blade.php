@@ -1,14 +1,23 @@
 @extends('layouts/layoutFront')
+@section('page-style')
+    @vite([
+    'resources/scss/information.scss',
+    'resources/scss/banner.scss',
+    'resources/scss/partners.scss',
+])
+@endsection
+@section('page-script')
+    @vite(['resources/js/partners.js'])
+@endsection
+
 
 @section('content')
 
     @include('layouts/sections/content/banner')
 
      @include('layouts.sections.content.information')
+     @include('layouts.sections.content.partners')
 
 @endsection
 
-@section('page-style')
-    @vite(['resources/scss/information.scss'
-])
-@endsection
+
