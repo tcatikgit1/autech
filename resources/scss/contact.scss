@@ -2,13 +2,12 @@
     display: flex;
     gap: 30px;
     width: 97%;
-    height: 40vh; /* Controla la altura del contenedor */
+    height: auto;
     margin-top: 1rem;
-    margin-bottom: 1rem;
     padding-left: 40px;
+    flex-wrap: wrap;
 }
 
-/* Estilo para el formulario */
 .formulario {
     width: 40%;
     max-width: 600px;
@@ -32,7 +31,6 @@
     border-radius: 5px;
 }
 
-/* Estilo para el botón de envío */
 .formulario button {
     margin-top: 20px;
     padding: 10px;
@@ -43,26 +41,19 @@
     cursor: pointer;
 }
 
-/* Estilo para el contenedor de WhatsApp y la información adicional */
 .contacto-info {
-    width: 60%; /* La segunda columna ocupa el 60% del espacio */
-    height: 100%; /* Asegura que la columna ocupe toda la altura */
-    background-image: url('/public/assets/img/whatsapp.png'); /* Cambia la ruta de la imagen si es necesario */
-    background-size: 40%; /* Hace que la imagen de fondo sea más pequeña */
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 20%;
+    height: auto;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: left;
-    color: rgb(0, 0, 0); /* Asegura que el texto sea visible sobre el fondo */
+    color: rgb(0, 0, 0);
 }
 
-/* Estilo para el contenedor de WhatsApp */
 .whatsapp {
     text-align: left;
-        margin-left: 60px;
-
+    margin-left: 60px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -90,10 +81,10 @@
 }
 
 .whatsapp img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
 }
-
 
 .checkbox-container {
     display: flex;
@@ -116,4 +107,70 @@
 
 .checkbox-container a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1524px) {
+    #w {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .formulario {
+        width: 50%;
+    }
+
+    .contacto-info {
+        width: 50%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .formulario {
+        width: 80%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .contacto-info {
+        width: 80%;
+        margin-top: 20px;
+
+    }
+
+    .whatsapp a {
+        width: 100%;
+    }
+
+    .whatsapp img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        width: 100%;
+        max-width: none;
+    }
+
+    .contacto-info {
+        width: 100%;
+        display: block;
+    }
+
+    .whatsapp a {
+        width: 100%;
+    }
+
+    .whatsapp img {
+        width: 35px;
+        height: 35px;
+    }
 }

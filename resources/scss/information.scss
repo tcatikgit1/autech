@@ -1,28 +1,52 @@
 body {
     font-family: Arial, sans-serif;
 }
+
 .information {
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 5rem;
+    flex-wrap: wrap;  /* Permite que los elementos se acomoden bien en pantallas pequeñas */
+    gap: 20px;  /* Añade espacio entre el texto y la imagen */
+    padding: 3rem;
+    align-items: center;  /* Centra los elementos verticalmente */
 }
+
 .text {
-    flex: 1;
-    padding-right: 25px;
+    flex: 1;  /* La sección de texto ocupa el 50% del espacio */
     font-size: 24px;
-    padding-left: 40px;
-}
-.images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    flex: 1;
-    margin: 3rem;
-}
-.images img {
-    width: 344.469px; height: 229.933px;
-}
-.images img:first-child {
-    grid-column: span 1;
+    padding-right: 20px;
 }
 
+.text h3 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
 
+.image {
+    margin-top: 5rem;
+    flex: 1;  /* La sección de imagen también ocupa el 50% */
+    display: flex;
+    justify-content: center;  /* Centra la imagen horizontalmente */
+    align-items: center;  /* Centra la imagen verticalmente */
+}
+
+.image img {
+    width: 100%;  /* La imagen ocupa el 100% del espacio disponible */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    max-width: 900px;  /* Aumenta el tamaño máximo de la imagen */
+    object-fit: cover;  /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .information {
+        flex-direction: column;  /* En pantallas más pequeñas, el contenido se acomoda en una columna */
+    }
+
+    .text {
+        font-size: 20px;  /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+
+    .image img {
+        max-width: 90%;  /* La imagen ocupará un 90% del ancho del contenedor en pantallas pequeñas */
+    }
+}

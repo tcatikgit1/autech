@@ -33,12 +33,19 @@ body {
     margin-right: 20px;
 }
 
+/* Aquí es donde hago el cambio */
+.navbar .nav-links {
+    display: flex;
+    gap: 50px; /* Espacio entre los enlaces */
+    margin-left: 50px;
+}
+
 .navbar .nav-links a {
-    margin: 50px;
     text-decoration: none;
     color: #000;
     font-weight: bold;
     font-size: 20px;
+    padding: 0 10px; /* Opcional: agrega algo de espacio alrededor del texto */
 }
 
 .contact-info {

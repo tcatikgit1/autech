@@ -1,7 +1,7 @@
 <div class="contacto">
     <!-- Formulario (Div 1) -->
     <div class="formulario div1">
-        <h2>📇 Contacta con nosotros</h2>
+        <h2><i class="fa-regular fa-address-book"></i>      Contacta con nosotros</h2>
         <form>
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Tu correo">
@@ -33,9 +33,9 @@
             </a>
             <p><b>Email:</b> info@autech.es</p>
             <p><b>Tel:</b> 928 123 123</p>
+
         </div>
+
     </div>
-
-    <!-- Imagen (Div 3) -->
-
+    <img src="{{'assets/img/whatsapp.png'}}" alt="img1" id="w">
 </div>
