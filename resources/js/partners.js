@@ -1,4 +1,4 @@
-const track = document.getElementById("carouselTrack");
+const track = document.getElementById("partnersTrack");
 const slides = Array.from(track.children);
 
 // Función para recalcular el ancho del slide según el tamaño de la ventana
