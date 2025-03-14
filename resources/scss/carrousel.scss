@@ -9,8 +9,16 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+/* Contenedor de título y logo con Flexbox */
+.title-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen y el texto */
+    justify-content: flex-start; /* Alinea el contenido al inicio (izquierda) */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 40px; /* Espacio debajo del título */
 }
 
+/* Estilo para el logo */
 .logo {
     width: 50px;
     height: 50px;
@@ -38,41 +46,90 @@ h1 {
     margin-right: 10px;
     position: relative;
     overflow: hidden;
+    max-width: 80px; /* Tamaño máximo para el logo */
+    height: auto; /* Mantiene la proporción del logo */
 }
 
+/* Estilo para el título */
+.title-container h1 {
+    font-size: 1.6rem; /* Reducir el tamaño de fuente para el título */
+    margin: 0; /* Elimina márgenes innecesarios */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Carrusel */
+.custom-carousel {
+    max-width: 80%;  /* Limita el ancho del carrusel */
+    margin: 0 auto;  /* Centra el carrusel */
+}
+
+/* Estilo para las imágenes del carrusel */
 .carousel-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+    height: 400px;  /* Ajusta la altura según lo necesites */
+    object-fit: cover;  /* Asegura que las imágenes se recorten proporcionalmente */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
-.text-overlay {
+/* Contenedor de la imagen y el texto */
+.carousel-image-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilo para los textos dentro de las imágenes */
+.carousel-text-container {
     position: absolute;
-    bottom: 0;
+    bottom: 0; /* Coloca el texto pegado a la parte inferior */
+    left: 0; /* Alinea el texto al inicio de la imagen */
+    width: 100%;  /* El contenedor de texto ocupa el 100% del ancho de la imagen */
     color: white;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 10px;  /* Añadir padding para que el texto no esté pegado a los bordes */
+    background: rgba(0, 0, 0, 0.5); /* Fondo translúcido para mejorar visibilidad */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+    /* Se elimina la alineación centrada, para que el texto se quede a la izquierda */
 }
 
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transform: translateY(-50%);
+/* Reducir el tamaño del texto dentro de las imágenes */
+.carousel-text-container h1 {
+    font-size: 1.2rem; /* Reducir el tamaño del título */
+    margin: 0;
 }
 
-#prevBtn {
-    left: 10px;
+.carousel-text-container h4 {
+    font-size: 0.9rem; /* Reducir el tamaño del subtítulo */
+    margin: 5px 0 0 0;  /* Ajustar el espacio entre título y subtítulo */
 }
 
-#nextBtn {
-    right: 10px;
+/* Espaciado entre las imágenes */
+.carousel-slide {
+    padding: 0 10px; /* Espacio entre las imágenes */
+}
+
+/* Responsividad: ajuste de tamaño para pantallas pequeñas */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 50px; /* Logo más pequeño en pantallas pequeñas */
+    }
+
+    .title-container h1 {
+        font-size: 1.4rem; /* Reducir aún más el tamaño del título en pantallas pequeñas */
+    }
+
+    .carousel-image {
+        height: 300px;  /* Ajustar la altura de las imágenes en pantallas pequeñas */
+    }
+
+    /* Reducir el tamaño del texto dentro del carrusel en pantallas pequeñas */
+    .carousel-text-container h1 {
+        font-size: 1rem; /* Reducir tamaño del texto del título */
+    }
+
+    .carousel-text-container h4 {
+        font-size: 0.8rem; /* Reducir tamaño del subtítulo */
+    }
+}
 }
