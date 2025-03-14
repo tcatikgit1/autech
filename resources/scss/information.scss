@@ -37,7 +37,7 @@ body {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .information {
         flex-direction: column;  /* En pantallas más pequeñas, el contenido se acomoda en una columna */
     }

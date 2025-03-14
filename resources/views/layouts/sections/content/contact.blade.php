@@ -33,9 +33,9 @@
             </a>
             <p><b>Email:</b> info@autech.es</p>
             <p><b>Tel:</b> 928 123 123</p>
+
         </div>
+
     </div>
-
-    <!-- Imagen (Div 3) -->
-
+    <img src="{{'assets/img/whatsapp.png'}}" alt="img1" id="w">
 </div>
