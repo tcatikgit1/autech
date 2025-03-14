@@ -6,6 +6,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding-left: 40px;
+    flex-wrap: wrap; /* Permite que los contenedores se apilen cuando no quepan */
 }
 
 /* Estilo para el formulario */
@@ -47,8 +48,8 @@
 .contacto-info {
     width: 60%; /* La segunda columna ocupa el 60% del espacio */
     height: 100%; /* Asegura que la columna ocupe toda la altura */
-    background-image: url('/public/assets/img/whatsapp.png'); /* Cambia la ruta de la imagen si es necesario */
-    background-size: 40%; /* Hace que la imagen de fondo sea más pequeña */
+    background-image: url('/public/assets/img/whatsapp.png'); /* Ruta de la imagen */
+    background-size: 40%; /* Ajusta el tamaño de la imagen */
     background-position: center;
     background-repeat: no-repeat;
     padding: 10px;
@@ -61,7 +62,7 @@
 /* Estilo para el contenedor de WhatsApp */
 .whatsapp {
     text-align: left;
-        margin-left: 60px;
+    margin-left: 60px;
 
     display: flex;
     flex-direction: column;
@@ -94,7 +95,7 @@
     height: 30px;
 }
 
-
+/* Contenedor para checkbox y texto en la misma fila */
 .checkbox-container {
     display: flex;
     align-items: center;
@@ -116,4 +117,62 @@
 
 .checkbox-container a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries para hacerlo responsive */
+@media (max-width: 1024px) {
+    .formulario {
+        width: 50%; /* El formulario ocupa el 50% en pantallas medianas */
+    }
+
+    .contacto-info {
+        width: 50%; /* El contenedor de WhatsApp ocupa el 50% en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto {
+        flex-direction: column; /* Cambia a columna cuando el ancho sea menor */
+        align-items: center; /* Centra los elementos */
+        padding-left: 0;  /* Elimina el padding */
+    }
+
+    .formulario {
+        width: 80%;  /* El formulario ocupa el 80% en pantallas pequeñas */
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .contacto-info {
+        width: 80%; /* El contenedor de WhatsApp ocupa el 80% en pantallas pequeñas */
+        background-size: 60%; /* La imagen será más grande en pantallas pequeñas */
+        margin-top: 20px;
+        display: block; /* Se asegura que el contenedor esté visible */
+    }
+
+    /* Esconde la imagen de fondo en pantallas pequeñas */
+    .contacto-info {
+        background-image: none;
+    }
+
+    .whatsapp a {
+        width: 100%; /* El botón de WhatsApp ocupará el 100% en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        width: 100%; /* En pantallas muy pequeñas, el formulario ocupa el 100% */
+        max-width: none; /* Elimina el límite del tamaño máximo */
+    }
+
+    .contacto-info {
+        width: 100%; /* El contenedor de WhatsApp ocupa el 100% en pantallas muy pequeñas */
+        display: block; /* Asegura que el contenedor esté visible */
+        background-image: none; /* Esconde la imagen de fondo */
+    }
+
+    .whatsapp a {
+        width: 100%; /* El botón de WhatsApp ocupará el 100% */
+    }
 }

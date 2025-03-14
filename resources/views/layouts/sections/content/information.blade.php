@@ -13,7 +13,6 @@
             de acceso público).</p>
     </div>
     <div class="image">
-        <img src="{{'assets/img/image.webp'}}" alt="img1">
-
+        <img src="{{'assets/img/Informacion.png'}}" alt="img1">
     </div>
 </div>
