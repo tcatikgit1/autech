@@ -1,3 +1,6 @@
+@section('page-style')
+    @vite(['resources/scss/information.scss'])
+@endsection
 <div class="container">
     <div class="text">
         <h3>
