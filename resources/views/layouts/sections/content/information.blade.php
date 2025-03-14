@@ -1,8 +1,8 @@
 <div class="information">
     <div class="text">
-        <h4>
+        <h3>
             <i class="fa-regular fa-building"></i> Conócenos
-        </h4>
+        </h3>
         <p>Somos una empresa Canaria formada por un grupo de <br> ingenieros, cualificados.</p>
         <p>Nuestros ámbitos de especialización son las <br> tecnologías, redes, internet, auditorías y ciberseguridad <br>
             además de los peritajes judiciales.</p>
