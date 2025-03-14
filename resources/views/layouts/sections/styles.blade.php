@@ -27,6 +27,7 @@
     'resources/scss/navbar.scss',
     'resources/scss/footer.scss',
     'resources/scss/banner.scss',
+    'resources/scss/carrousel.scss'
 ])
 @yield('vendor-style')
 

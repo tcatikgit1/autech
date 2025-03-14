@@ -1,0 +1,78 @@
+.carousel {
+    position: relative;
+    max-width: 70%; /* Ajustar el ancho máximo del carrusel */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header {
+    display: flex; /* Usamos flexbox para alinear la imagen y el título */
+    align-items: center; /* Alineamos verticalmente la imagen y el texto */
+    margin-bottom: 20px; /* Separar la cabecera del carrusel */
+}
+
+.logo {
+    width: 50px; /* Ajustamos el tamaño de la imagen */
+    height: 50px; /* Aseguramos que la altura y la anchura sean iguales */
+    object-fit: cover; /* Aseguramos que la imagen no se distorsione */
+    margin-right: 20px; /* Espaciado entre la imagen y el título */
+}
+
+h1 {
+    font-size: 2rem; /* Tamaño del título */
+    margin: 0; /* Quitamos márgenes por defecto */
+}
+
+.carousel-track-wrapper {
+    display: flex;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 250px; /* Tamaño fijo de las imágenes */
+    height: 400px; /* Fijamos la altura para que todas las imágenes tengan la misma altura */
+    margin-right: 10px; /* Espaciado entre las imágenes */
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;  /* Garantizamos que las imágenes llenen todo el contenedor */
+    object-fit: cover;  /* Ajusta la imagen para que cubra el contenedor sin distorsión */
+    border-radius: 8px; /* Bordes redondeados de las imágenes */
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}

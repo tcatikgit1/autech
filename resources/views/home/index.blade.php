@@ -2,9 +2,10 @@
 
 @section('content')
 
-    @include('layouts/sections/content/banner')
+    @include('layouts.sections.content.banner')
+    @include('layouts.sections.content.carrousel')
 
-     @include('layouts.sections.content.information')
+    @include('layouts.sections.content.information')
 
 @endsection
 
