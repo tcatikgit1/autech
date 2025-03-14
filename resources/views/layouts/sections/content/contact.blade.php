@@ -1,7 +1,7 @@
 <div class="contacto">
     <!-- Formulario (Div 1) -->
     <div class="formulario div1">
-        <h2>📇 Contacta con nosotros</h2>
+        <h2><i class="fa-regular fa-address-book"></i>      Contacta con nosotros</h2>
         <form>
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Tu correo">
