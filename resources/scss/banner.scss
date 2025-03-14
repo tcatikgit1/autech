@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     width: 100%;
-    height: 50vh; /* Altura flexible */
+    height: 50vh;
 }
 
 .banner img {
@@ -17,25 +17,24 @@
     text-align: right;
     padding: 0 20px;
     margin: 0;
-    right: 10%; /* Alineación a la derecha */
+    right: 10%;
 }
 
 .banner h1 {
-    top: 10%; /* Se ajusta verticalmente */
+    top: 10%;
     font-size: 3rem;
     font-weight: bold;
 }
 
 .banner h4 {
-    top: calc(10% + 3rem); /* La posición vertical se ajusta para evitar el solapamiento */
+    top: calc(10% + 3rem);
     font-size: 2rem;
     font-weight: normal;
 }
 
-/* Medias Queries para hacer el banner responsive */
 @media (max-width: 1200px) {
     .banner {
-        height: 40vh; /* Altura ajustada para pantallas más pequeñas */
+        height: 40vh;
     }
 
     .banner h1 {
@@ -45,13 +44,13 @@
 
     .banner h4 {
         font-size: 1.8rem;
-        top: calc(10% + 2.5rem); /* Ajustamos para evitar el solapamiento */
+        top: calc(10% + 2.5rem);
     }
 }
 
 @media (max-width: 768px) {
     .banner {
-        height: 35vh; /* Ajustamos aún más la altura para tabletas */
+        height: 35vh;
     }
 
     .banner h1 {
@@ -61,13 +60,13 @@
 
     .banner h4 {
         font-size: 1.5rem;
-        top: calc(8% + 2rem); /* Ajuste dinámico para mayor separación */
+        top: calc(8% + 2rem);
     }
 }
 
 @media (max-width: 480px) {
     .banner {
-        height: 30vh; /* Ajustamos la altura para dispositivos móviles */
+        height: 30vh;
     }
 
     .banner h1 {
@@ -77,6 +76,6 @@
 
     .banner h4 {
         font-size: 1.2rem;
-        top: calc(5% + 1.8rem); /* Mantén la separación dinámica */
+        top: calc(5% + 1.8rem);
     }
 }
