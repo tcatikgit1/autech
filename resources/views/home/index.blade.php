@@ -5,11 +5,15 @@
             'resources/scss/banner.scss',
             'resources/scss/partners.scss',
             'resources/scss/contact.scss',
+            'resources/scss/carrousel.scss'
 
         ])
 @endsection
 @section('page-script')
-    @vite(['resources/js/partners.js'])
+    @vite([
+    'resources/js/partners.js',
+    'resources/js/carrousel.js',
+])
 @endsection
 
 
