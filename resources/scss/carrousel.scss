@@ -5,11 +5,12 @@
     justify-content: flex-start; /* Alinea el contenido al inicio (izquierda) */
     gap: 20px; /* Espacio entre la imagen y el texto */
     margin-bottom: 40px; /* Espacio debajo del título */
+    padding-left: 3%; /* Añadir un poco de espacio en la izquierda */
 }
 
 /* Estilo para el logo */
-.logo {
-    max-width: 80px; /* Tamaño máximo para el logo */
+.logo1 {
+    max-width: 30px; /* Tamaño máximo para el logo */
     height: auto; /* Mantiene la proporción del logo */
 }
 
@@ -71,7 +72,7 @@
 
 /* Responsividad: ajuste de tamaño para pantallas pequeñas */
 @media (max-width: 768px) {
-    .logo {
+    .logo1 {
         max-width: 50px; /* Logo más pequeño en pantallas pequeñas */
     }
 
