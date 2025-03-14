@@ -1,54 +1,61 @@
-<section id="image-carousel" class="carousel">
-    <div class="header">
-        <img src="{{ 'assets/img/caroussel/logoService.png' }}" alt="Logo de Servicios" class="logo">
+<!-- Título de la sección con logo -->
+<section class="section-title">
+    <div class="title-container">
+        <img src="{{ 'assets/img/caroussel/logoService.png' }}" alt="Logo de la sección" class="logo">
         <h1>Nuestros servicios</h1>
     </div>
-    <div class="carousel-track-wrapper">
-        <ul id="carouselTrack" class="carousel-track">
-            <li class="carousel-slide">
-                <img src="{{ 'assets/img/caroussel/img1.png' }}" alt="Imagen 1" class="carousel-image">
-                <div class="text-overlay">
-                    <h3 class="title">Auditoría y soluciones en Ciberseguridad</h3>
-                    <p class="description">Auditorías certificadas y soluciones en ciberseguridad y protección de
-                        redes...</p>
+</section>
+<!-- Carrusel -->
+<section uk-slider="finite: true" class="custom-carousel">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+        <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+                <img src="{{ 'assets/img/caroussel/img1.png' }}" class="carousel-image" alt="Imagen 1">
+                <div class="carousel-text-container">
+                    <h1>Auditoría y soluciones en Ciberseguridad</h1>
+                    <h4>Auditorías certificadas y soluciones en ciberseguridad y protección de redes...</h4>
                 </div>
-            </li>
-            <li class="carousel-slide">
-                <img src="{{ 'assets/img/caroussel/img2.png' }}" alt="Imagen 2" class="carousel-image">
-                <div class="text-overlay">
-                    <h3 class="title">Peritajes informáticos Judiciales</h3>
-                    <p class="description">Peritajes judiciales del ámbito informático, redes, servidores y correo
-                        electrónico.</p>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <img src="{{ 'assets/img/caroussel/img2.png' }}" class="carousel-image" alt="Imagen 2">
+                <div class="carousel-text-container">
+                    <h1>Peritajes informáticos Judiciales</h1>
+                    <h4>Peritajes judiciales del ámbito informático, redes, servidores y correo electrónico.</h4>
                 </div>
-            </li>
-            <li class="carousel-slide">
-                <img src="{{ 'assets/img/caroussel/img3.png' }}" alt="Imagen 3" class="carousel-image">
-                <div class="text-overlay">
-                    <h3 class="title">Soluciones y servicios IT</h3>
-                    <p class="description">Soporte y atención técnica especializada, mejoras de servicios IT,
-                        Mantenimientos IT...</p>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+                <img src="{{ 'assets/img/caroussel/img3.png' }}" class="carousel-image" alt="Imagen 3">
+                <div class="carousel-text-container">
+                    <h1>Soluciones y servicios IT</h1>
+                    <h4>Soporte y atención técnica especializada, mejoras de servicios IT, Mantenimientos IT...</h4>
                 </div>
-            </li>
-            <li class="carousel-slide">
-                <img src="{{ 'assets/img/caroussel/img4.png' }}" alt="Imagen 4" class="carousel-image">
-                <div class="text-overlay">
-                    <h3 class="title">Instalaciones de sistemas e internet wifi profesional</h3>
-                    <p class="description">Instalaciones, cableados de redes y configuraciones de redes wifi y
-                        cableadas. Para hoteles, grandes superficies, oficinas...</p>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+                <img src="{{ 'assets/img/caroussel/img4.png' }}" class="carousel-image" alt="Imagen 4">
+                <div class="carousel-text-container">
+                    <h1>Instalaciones de sistemas e internet wifi profesional</h1>
+                    <h4>Instalaciones, cableados de redes y configuraciones de redes wifi y cableadas. Para hoteles, grandes superficies, oficinas...</h4>
                 </div>
-            </li>
-            <li class="carousel-slide">
-                <img src="{{ 'assets/img/caroussel/img5.png' }}" alt="Imagen 5" class="carousel-image">
-                <div class="text-overlay">
-                    <h3 class="title">Consultoría técnica</h3>
-                    <p class="description">Consultoría especializada en mejoras de producción, mejoras de procesos
-                        laborales y atención técnica</p>
+            </div>
+            <!-- Slide 5 -->
+            <div class="carousel-slide">
+                <img src="{{ 'assets/img/caroussel/img5.png' }}" class="carousel-image" alt="Imagen 5">
+                <div class="carousel-text-container">
+                    <h1>Consultoría técnica</h1>
+                    <h4>Consultoría especializada en mejoras de producción, mejoras de procesos laborales y atención técnica</h4>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
+
+        <!-- Controles de navegación -->
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
     </div>
 
-    <!-- Botones de navegación -->
-    <button id="prevBtn" class="carousel-btn">Prev</button>
-    <button id="nextBtn" class="carousel-btn">Next</button>
+    <!-- Puntos de navegación -->
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 </section>
