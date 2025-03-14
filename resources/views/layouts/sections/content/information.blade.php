@@ -12,10 +12,8 @@
         <p>Así como proyectos profesionales de soluciones IT<br> (informática, redes, servidores, wifi corporativo y wifi<br>
             de acceso público).</p>
     </div>
-    <div class="images">
-        <img src="{{'assets/img/img1.png'}}" alt="img1">
-        <img src="{{'assets/img/img3.png'}}" alt="img3">
-        <img src="{{'assets/img/img2.png'}}" alt="img2">
-        <img src="{{'assets/img/img4.png'}}" alt="img4">
+    <div class="image">
+        <img src="{{'assets/img/image.webp'}}" alt="img1">
+
     </div>
 </div>
