@@ -24,19 +24,13 @@
 
 
     @include('layouts/sections/styles')
-
-    {{-- 1.2 En el index unar la seccion "page-script" y crear un script con un alert para comprobar que se incluye bien--}}
     @include('layouts/sections/scipts')
 
 </head>
 
-<body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
+<body >
 
     @yield('layoutContent')
-
-    @if (Route::has('login'))
-        <div class="h-14.5 hidden lg:block"></div>
-    @endif
 
 </body>
 

@@ -1,4 +1,4 @@
-<div class="contacto">
+<div class="contacto" id="contacto">
     <!-- Formulario (Div 1) -->
     <div class="formulario div1">
         <h2><i class="fa-regular fa-address-book"></i>      Contacta con nosotros</h2>
@@ -27,7 +27,7 @@
     <!-- WhatsApp (Div 2) -->
     <div class="contacto-info div2">
         <div class="whatsapp">
-            <p>O también envíanos un Whatsapp:</p>
+            <p><strong> O también envíanos un Whatsapp:</strong></p>
             <a href="https://wa.me/123456789" target="_blank">
                 <i class="fab fa-whatsapp"></i> Iniciar chat
             </a>
