@@ -23,6 +23,8 @@
     @include('layouts.sections.content.carrousel')
     @include('layouts.sections.content.cibersecurity')
     @include('layouts.sections.content.peritajes')
+    @include('layouts.sections.content.wifi')
+    @include('layouts.sections.content.industria')
 
      @include('layouts.sections.content.information')
      @include('layouts.sections.content.contact')
