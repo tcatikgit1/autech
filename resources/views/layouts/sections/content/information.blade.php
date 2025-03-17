@@ -1,15 +1,15 @@
 <div class="information">
     <div class="text">
-        <h3>
+        <h2>
             <i class="fa-regular fa-building"></i> Conócenos
-        </h3>
-        <p>Somos una empresa Canaria formada por un grupo de <br> ingenieros, cualificados.</p>
-        <p>Nuestros ámbitos de especialización son las <br> tecnologías, redes, internet, auditorías y ciberseguridad <br>
-            además de los peritajes judiciales.</p>
-        <p>Creamos proyectos desde cero, que van desde la <br> adaptación de metodologías de trabajo más ágiles para <br>
-            oficinas e industria, correo en la nube, clouding, <br> archivos en la nube, adaptación de procesos de trabajo <br>
-            hasta las auditorías de ciberseguridad.</p>
-        <p>Así como proyectos profesionales de soluciones IT<br> (informática, redes, servidores, wifi corporativo y wifi<br>
+        </h2>
+        <p>Somos una empresa Canaria formada por un grupo de ingenieros, cualificados.</p>
+        <p>Nuestros ámbitos de especialización son las tecnologías, redes, internet, auditorías y ciberseguridad
+            además de los peritajes judiciales.<br><br>
+        Creamos proyectos desde cero, que van desde la adaptación de metodologías de trabajo más ágiles para
+            oficinas e industria, correo en la nube, clouding, archivos en la nube, adaptación de procesos de trabajo
+            hasta las auditorías de ciberseguridad.<br><br>
+        Así como proyectos profesionales de soluciones IT (informática, redes, servidores, wifi corporativo y wifi
             de acceso público).</p>
     </div>
     <div class="image">
