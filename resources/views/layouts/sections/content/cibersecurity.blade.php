@@ -13,6 +13,6 @@
 
     </div>
     <div class="image2">
-        <img src="{{'assets/img/ImgService.png'}}" alt="img">
+        <img src="{{'assets/img/services/ImgService.png'}}" alt="img">
     </div>
 </div>
