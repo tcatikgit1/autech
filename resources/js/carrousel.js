@@ -1,15 +1,10 @@
-$(document).ready(function () {
-  $(".custom-carousel").owlCarousel({
+$(".custom-carousel").owlCarousel({
     autoWidth: true,
-    loop: true,
-    margin: 20,
-    responsiveClass: true,
-    nav: false,
-    dots: true,
-  });
-
-  $(".custom-carousel .item").click(function () {
-    $(".custom-carousel .item").removeClass("active");
-    $(this).addClass("active");
-  });
+    loop: true
+});
+$(document).ready(function () {
+    $(".custom-carousel .item").click(function () {
+        $(".custom-carousel .item").not($(this)).removeClass("active");
+        $(this).toggleClass("active");
+    });
 });
