@@ -11,7 +11,6 @@
 
 @vite([
     'resources/assets/vendor/fonts/tabler-icons.scss',
-    'resources/assets/vendor/fonts/fontawesome.scss',
     'resources/assets/vendor/fonts/flag-icons.scss',
     'resources/assets/vendor/libs/node-waves/node-waves.scss',
     'resources/css/app.scss'
