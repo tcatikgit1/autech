@@ -34,9 +34,15 @@
     height: auto;
     max-width: 900px;
     object-fit: cover;
-        margin-bottom: 2rem;
+    margin-bottom: 2rem;
+}
 
-
+.image3 img {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    object-fit: cover;
+    margin-bottom: 2rem;
 }
 
 
@@ -68,6 +74,7 @@
     max-width: 900px;
     object-fit: cover;
     margin-bottom: 2rem;
+    border-radius: 15px;
 }
 
 
@@ -112,6 +119,7 @@
     max-width: 900px;
     object-fit: cover;
     margin-bottom: 2rem;
+    border-radius: 15px;
 }
 
 .content_peritajes {
