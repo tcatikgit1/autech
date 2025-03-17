@@ -57,7 +57,7 @@
 .contacto-info {
     width: 50%;
     height: 100%;
-    padding: 6px;
+    padding: 20px;
     padding-left: 40px;
     display: flex;
     flex-direction: column;
@@ -100,7 +100,6 @@
     width: 100%;
     height: 280%;
     z-index: -1; /* Envía la imagen detrás del contenido */
-    margin-top: 4rem;
     margin-left: 15rem;
 }
 
@@ -160,68 +159,99 @@
     display: block; /* Asegura que ocupe todo el ancho disponible */
     margin-left: auto; /* Lo empuja hacia la derecha */
 }
+#w {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 280%;
+  z-index: -1;
+  margin-left: 15rem;
+  transition: transform 0.3s ease;
+}
 
+@media (max-width: 1360px) {
+  #w {
+    width: 80%; /* Reducir más el tamaño */
+    height: 150%; /* Ajuste de altura */
+    margin-left: 0;
+    bottom: 0; /* Anclar al fondo */
+    right: 0; /* Anclar a la derecha */
+    transform: scale(0.6); /* Reducir el tamaño al 60% */
+  }
 
+  .formulario {
+    width: 50%;
+  }
 
-
-
-
-@media (max-width: 1024px) {
-    .formulario {
-        width: 50%;
-    }
-
-    .contacto-info {
-        width: 50%;
-        margin-top: 20px;
-    }
+  .contacto-info {
+    width: 50%;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 768px) {
-    .contacto {
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
-    }
+  #w {
+    width: 70%; /* Hacer la imagen aún más pequeña */
+    height: 100%; /* Ajustar la altura */
+    margin-left: 0;
+    bottom: 0; /* Anclar al fondo */
+    right: 0; /* Anclar a la derecha */
+    transform: scale(0.5); /* Reducir el tamaño al 50% */
+  }
 
-    .formulario {
-        width: 80%;
-        max-width: 500px;
-        margin-bottom: 20px;
-    }
+  .contacto {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
 
-    .contacto-info {
-        width: 80%;
-        margin-top: 20px;
+  .formulario {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
 
-    }
+  .contacto-info {
+    width: 80%;
+    margin-top: 20px;
+  }
 
-    .whatsapp a {
-        width: 100%;
-    }
+  .whatsapp a {
+    width: 100%;
+  }
 
-    .whatsapp img {
-        display: none;
-    }
+  .whatsapp img {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
-    .formulario {
-        width: 100%;
-        max-width: none;
-    }
+  #w {
+    width: 60%; /* Reducir aún más */
+    height: 80%;
+    margin-left: 0;
+    bottom: 0; /* Anclar al fondo */
+    right: 0; /* Anclar a la derecha */
+    transform: scale(0.4); /* Reducir el tamaño al 40% */
+  }
 
-    .contacto-info {
-        width: 100%;
-        display: block;
-    }
+  .formulario {
+    width: 100%;
+    max-width: none;
+  }
 
-    .whatsapp a {
-        width: 100%;
-    }
+  .contacto-info {
+    width: 100%;
+    display: block;
+  }
 
-    .whatsapp img {
-        width: 35px;
-        height: 35px;
-    }
+  .whatsapp a {
+    width: 100%;
+  }
+
+  .whatsapp img {
+    width: 35px;
+    height: 35px;
+  }
 }
