@@ -38,7 +38,7 @@
                 <img src="{{ 'assets/img/caroussel/img4.png' }}" class="carousel-image" alt="Imagen 4">
                 <div class="carousel-text-container">
                     <h1>Instalaciones de sistemas e internet wifi profesional</h1>
-                    <h4>Instalaciones, cableados de redes y configuraciones de redes wifi y cableadas. Para hoteles, grandes superficies, oficinas...</h4>
+                    <h4>Instalaciones, cableados de redes y configuraciones de redes wifi y cableadas.</h4>
                 </div>
             </div>
             <!-- Slide 5 -->
