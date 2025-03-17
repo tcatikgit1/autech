@@ -1,17 +1,17 @@
 <!-- Título de la sección con logo -->
 <section class="section-title">
-    <div class="title-container">
+    <div class="title-container" id="servicios">
         <img src="{{ 'assets/img/caroussel/logoService.png' }}" alt="Logo de la sección" class="logo1">
         <h1>Nuestros servicios</h1>
     </div>
 </section>
 <!-- Carrusel -->
 <section uk-slider="finite: true" class="custom-carousel">
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" >
         <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
             <!-- Slide 1 -->
             <div class="carousel-slide">
-                <img src="{{ 'assets/img/caroussel/img1.png' }}" class="carousel-image" alt="Imagen 1">
+                <a href="#ciberseguridad"><img src="{{ 'assets/img/caroussel/img1.png' }}" class="carousel-image" alt="Imagen 1"></a>
                 <div class="carousel-text-container">
                     <h1>Auditoría y soluciones en Ciberseguridad</h1>
                     <h4>Auditorías certificadas y soluciones en ciberseguridad y protección de redes...</h4>

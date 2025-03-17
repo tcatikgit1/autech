@@ -1,89 +1,75 @@
 /* Contenedor de título y logo con Flexbox */
 .title-container {
     display: flex;
-    align-items: center; /* Centra verticalmente la imagen y el texto */
-    justify-content: flex-start; /* Alinea el contenido al inicio (izquierda) */
-    gap: 20px; /* Espacio entre la imagen y el texto */
-    margin-bottom: 40px; /* Espacio debajo del título */
-    padding-left: 3%; /* Añadir un poco de espacio en la izquierda */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding-left: 3%;
 }
 
 /* Estilo para el logo */
 .logo1 {
-    max-width: 30px; /* Tamaño máximo para el logo */
-    height: auto; /* Mantiene la proporción del logo */
+    max-width: 30px;
+    height: auto;
 }
 
 /* Estilo para el título */
 .title-container h1 {
-    font-size: 1.6rem; /* Reducir el tamaño de fuente para el título */
-    margin: 0; /* Elimina márgenes innecesarios */
-    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 1.6rem;
+    margin: 0;
+    text-align: left;
 }
 
 /* Carrusel */
 .custom-carousel {
-    max-width: 80%;  /* Limita el ancho del carrusel */
-    margin: 0 auto;  /* Centra el carrusel */
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 /* Estilo para las imágenes del carrusel */
 .carousel-image {
     width: 100%;
-    height: 400px;  /* Ajusta la altura según lo necesites */
-    object-fit: cover;  /* Asegura que las imágenes se recorten proporcionalmente */
-    border-radius: 10px; /* Bordes redondeados */
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-/* Estilo para los textos dentro de las imágenes */
+/* Ocultar el texto del carrusel por defecto */
 .carousel-text-container {
     position: absolute;
-    bottom: 0; /* Coloca el texto pegado a la parte inferior */
-    left: 0; /* Alinea el texto al inicio de la imagen */
-    width: 90%; /* Asegura que el contenedor de texto ocupe todo el ancho de la imagen */
+    bottom: 0;
+    left: 10px;
+    width: calc(100% - 20px); /* Asegura que el contenedor ocupe todo el ancho de la imagen con un pequeño margen */
     color: white;
-    padding: 10px 7.5px;  /* Añadir padding para que el texto no esté pegado a los bordes */
-    margin-left: 10px;
-    background: rgba(0, 0, 0, 0.5); /* Fondo translúcido para mejorar visibilidad */
-    border-radius: 0px 0px 10px 010px /* Bordes redondeados solo en la parte superior */
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    box-sizing: border-box; /* Evita que el padding haga que el contenedor se desborde */
+}
+
+/* Mostrar el texto cuando se pase el ratón por encima de la imagen */
+.carousel-slide:hover .carousel-text-container {
+    opacity: 1;
 }
 
 /* Reducir el tamaño del texto dentro de las imágenes */
 .carousel-text-container h1 {
-    font-size: 1.2rem; /* Reducir el tamaño del título */
-    //margin: 0;
+    font-size: 1.2rem;
+    margin: 5px 0;
 }
 
 .carousel-text-container h4 {
-    font-size: 0.9rem; /* Reducir el tamaño del subtítulo */
-    //margin: 0;  /* Ajustar el espacio entre título y subtítulo */
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 /* Espaciado entre las imágenes */
 .carousel-slide {
-    padding: 0 10px; /* Espacio entre las imágenes */
-}
-
-/* Responsividad: ajuste de tamaño para pantallas pequeñas */
-@media (max-width: 768px) {
-    .logo1 {
-        max-width: 50px; /* Logo más pequeño en pantallas pequeñas */
-    }
-
-    .title-container h1 {
-        font-size: 1.4rem; /* Reducir aún más el tamaño del título en pantallas pequeñas */
-    }
-
-    .carousel-image {
-        height: 300px;  /* Ajustar la altura de las imágenes en pantallas pequeñas */
-    }
-
-    /* Reducir el tamaño del texto dentro del carrusel en pantallas pequeñas */
-    .carousel-text-container h1 {
-        font-size: 1rem; /* Reducir tamaño del texto del título */
-    }
-
-    .carousel-text-container h4 {
-        font-size: 0.8rem; /* Reducir tamaño del subtítulo */
-    }
+    padding: 0 10px;
+    position: relative;
+    overflow: hidden; /* Evita que el fondo del texto se desborde de la imagen */
 }
