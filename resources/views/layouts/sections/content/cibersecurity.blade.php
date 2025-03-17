@@ -10,7 +10,6 @@
             Implantación de soluciones tecnológicas de Ciberseguridad
             Fabricación de soluciones y servicios propios</p>
         <p><strong>Auditoría de Seguridad, Sistemas, Web, App, Código, Wifi, Redes e Infraestructura.</strong> Apuntando a solucionar todos los problemas de protección, integridad, privacidad y respaldo Consultoría Informática, como a implementar nuevas soluciones para que su empresa siga funcionando bajo cualquier circunstancia.</p>
-
     </div>
     <div class="image2">
         <img src="{{'assets/img/services/ImgService.png'}}" alt="img">
