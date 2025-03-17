@@ -49,20 +49,20 @@
 
 @media (max-width: 1024px) {
     .footer {
-        flex-direction: column; /* Hace que los elementos se apilen verticalmente */
-        align-items: center; /* Centra todo el contenido */
+        flex-direction: column;
+        align-items: center;
         text-align: center;
 
     }
 
     .footer .logo img {
 
-        margin-bottom: 20px; /* Espacio entre el logo y los enlaces */
+        margin-bottom: 20px;
     }
 
     .footer .footer-links {
-        flex-direction: column; /* Cambia la dirección de los enlaces a columna */
-        justify-content: center; /* Alinea los enlaces en el centro */
+        flex-direction: column;
+        justify-content: center;
             text-align: center;
             align-items: flex-start;
             margin-left: 13rem;

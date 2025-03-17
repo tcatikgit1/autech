@@ -12,7 +12,6 @@
 @section('page-script')
     @vite([
     'resources/js/partners.js',
-    'resources/js/carrousel.js',
 ])
 @endsection
 
@@ -25,10 +24,9 @@
     @include('layouts.sections.content.peritajes')
     @include('layouts.sections.content.wifi')
     @include('layouts.sections.content.industria')
-
-     @include('layouts.sections.content.information')
-     @include('layouts.sections.content.contact')
-     @include('layouts.sections.content.partners')
+    @include('layouts.sections.content.information')
+    @include('layouts.sections.content.contact')
+    @include('layouts.sections.content.partners')
 
 @endsection
 
