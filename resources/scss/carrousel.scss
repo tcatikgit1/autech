@@ -40,11 +40,12 @@
     position: absolute;
     bottom: 0; /* Coloca el texto pegado a la parte inferior */
     left: 0; /* Alinea el texto al inicio de la imagen */
-    width: 100%; /* Asegura que el contenedor de texto ocupe todo el ancho de la imagen */
+    width: 90%; /* Asegura que el contenedor de texto ocupe todo el ancho de la imagen */
     color: white;
-    padding: 10px;  /* Añadir padding para que el texto no esté pegado a los bordes */
+    padding: 10px 7.5px;  /* Añadir padding para que el texto no esté pegado a los bordes */
+    margin-left: 10px;
     background: rgba(0, 0, 0, 0.5); /* Fondo translúcido para mejorar visibilidad */
-    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+    border-radius: 0px 0px 10px 010px /* Bordes redondeados solo en la parte superior */
 }
 
 /* Reducir el tamaño del texto dentro de las imágenes */
