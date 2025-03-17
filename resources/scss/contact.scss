@@ -1,16 +1,29 @@
 .contacto {
+    position: relative;
     display: flex;
-    gap: 30px;
     width: 97%;
-    height: auto;
     margin-top: 1rem;
     padding-left: 40px;
     flex-wrap: wrap;
+    z-index: 1;
+    overflow: hidden; /* Para que la imagen no sobresalga */
+}
+
+.formulario,
+.contacto-info {
+    width: 100%;
+    max-width: 600px;
+    position: relative; /* Asegura que los elementos se mantengan sobre la imagen */
+    background: rgba(255, 255, 255, 0.8); /* Agrega un fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
 }
 
 .formulario {
-    width: 40%;
-    max-width: 600px;
+    width: 50%;
+    max-width: 850px;
+    margin-right: 30px;
 }
 
 .formulario h2 {
@@ -42,9 +55,10 @@
 }
 
 .contacto-info {
-    width: 20%;
-    height: auto;
-    padding: 10px;
+    width: 50%;
+    height: 100%;
+    padding: 6px;
+    padding-left: 40px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -53,7 +67,6 @@
 
 .whatsapp {
     text-align: left;
-    margin-left: 60px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -63,41 +76,49 @@
 
 .whatsapp a {
     display: flex;
-    align-items: center;
-    padding: 15px 30px;
+    align-items: left;
+    padding: 12px 8px;
     background-color: #25D366;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     font-size: 18px;
-    margin: 10px 0;
+    margin: 0px 0;
     text-align: center;
-    width: 50%;
+    width: 60%;
 }
 
 .whatsapp a i {
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
-.whatsapp img {
-    width: 50px;
-    height: 50px;
-    margin-top: 20px;
+#w {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 260%;
+    z-index: -1; /* Envía la imagen detrás del contenido */
+    margin-top: 4rem;
+    margin-left: 15rem;
 }
 
 .checkbox-container {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 .checkbox-container label {
-    font-size: 0.8rem;
+    font-size: 1.0rem;
 }
 
 .checkbox-container input {
     margin-top: 0.5rem;
+    height: 20px;
+    width: 15px;
+    margin-right: 8px;
 }
 
 .checkbox-container a {
@@ -108,12 +129,42 @@
 .checkbox-container a:hover {
     text-decoration: underline;
 }
-
-@media (max-width: 1524px) {
-    #w {
-        display: none;
-    }
+.whatsapp-link {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center;
+    gap: 10px; /* Espacio entre el icono y el texto */
+    padding: 8px 12px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    width: fit-content; /* Ajuste automático al contenido */
 }
+
+.whatsapp-link svg {
+    width: 24px; /* Ajusta el tamaño del icono */
+    height: 24px;
+}
+
+.formulario button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #00c853;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Asegura que ocupe todo el ancho disponible */
+    margin-left: auto; /* Lo empuja hacia la derecha */
+}
+
+
+
+
+
 
 @media (max-width: 1024px) {
     .formulario {
