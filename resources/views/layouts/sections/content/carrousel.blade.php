@@ -19,7 +19,7 @@
             </div>
             <!-- Slide 2 -->
             <div class="carousel-slide">
-                <img src="{{ 'assets/img/caroussel/img2.png' }}" class="carousel-image" alt="Imagen 2">
+                <a href="#peritaje"><img src="{{ 'assets/img/caroussel/img2.png' }}" class="carousel-image" alt="Imagen 2"></a>
                 <div class="carousel-text-container">
                     <h1>Peritajes informáticos Judiciales</h1>
                     <h4>Peritajes judiciales del ámbito informático, redes, servidores y correo electrónico.</h4>
@@ -27,7 +27,7 @@
             </div>
             <!-- Slide 3 -->
             <div class="carousel-slide">
-                <img src="{{ 'assets/img/caroussel/img3.png' }}" class="carousel-image" alt="Imagen 3">
+                <a href="#wifi"><img src="{{ 'assets/img/caroussel/img3.png' }}" class="carousel-image" alt="Imagen 3"></a>
                 <div class="carousel-text-container">
                     <h1>Soluciones y servicios IT</h1>
                     <h4>Soporte y atención técnica especializada, mejoras de servicios IT, Mantenimientos IT...</h4>
@@ -35,7 +35,7 @@
             </div>
             <!-- Slide 4 -->
             <div class="carousel-slide">
-                <img src="{{ 'assets/img/caroussel/img4.png' }}" class="carousel-image" alt="Imagen 4">
+                <a href="#wifi"><img src="{{ 'assets/img/caroussel/img4.png' }}" class="carousel-image" alt="Imagen 4"></a>
                 <div class="carousel-text-container">
                     <h1>Instalaciones de sistemas e internet wifi profesional</h1>
                     <h4>Instalaciones, cableados de redes y configuraciones de redes wifi y cableadas.</h4>
@@ -43,7 +43,7 @@
             </div>
             <!-- Slide 5 -->
             <div class="carousel-slide">
-                <img src="{{ 'assets/img/caroussel/img5.png' }}" class="carousel-image" alt="Imagen 5">
+                <a href="#industria"><img src="{{ 'assets/img/caroussel/img5.png' }}" class="carousel-image" alt="Imagen 5"></a>
                 <div class="carousel-text-container">
                     <h1>Consultoría técnica</h1>
                     <h4>Consultoría especializada en mejoras de producción, mejoras de procesos laborales y atención técnica</h4>

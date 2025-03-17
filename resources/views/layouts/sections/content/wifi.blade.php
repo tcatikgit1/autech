@@ -1,4 +1,4 @@
-<div class="information" id="ciberseguridad">
+<div class="information" id="wifi">
     <div class="text2">
         <h4>Servicio</h4>
         <h1>Wifi y Redes</h1>

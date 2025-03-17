@@ -1,4 +1,4 @@
-<div class="information">
+<div class="information" id="peritaje">
     <div class="image_container">
         <h4>Servicio</h4>
         <h1>Peritajes Judiciales</h1>

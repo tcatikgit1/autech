@@ -1,4 +1,4 @@
-<div class="information">
+<div class="information" id="industria">
     <div class="image_container">
         <h4>Servicio</h4>
         <h1>Industria 4.0</h1>
