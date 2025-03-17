@@ -1,4 +1,4 @@
-<div class="information">
+<div class="information" id="ciberseguridad">
     <div class="text2">
         <h4>Servicio</h4>
         <h1>Ciberseguridad</h1>
