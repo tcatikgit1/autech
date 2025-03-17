@@ -30,7 +30,7 @@
     'resources/assets/vendor/libs/typeahead-js/typeahead.scss',
     'resources/css/app.scss',
     'resources/scss/navbar.scss',
-    'resources/scss/footer.scss'
+    'resources/scss/footer.scss',
 
 
 ])

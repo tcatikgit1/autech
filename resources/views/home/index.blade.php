@@ -5,7 +5,9 @@
     'resources/scss/banner.scss',
     'resources/scss/partners.scss',
     'resources/scss/contact.scss',
-    'resources/scss/carrousel.scss'
+    'resources/scss/carrousel.scss',
+    'resources/scss/index.scss'
+
 
 ])
 @endsection
