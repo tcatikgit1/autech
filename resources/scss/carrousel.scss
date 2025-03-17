@@ -1,33 +1,15 @@
 button {
     outline: none !important;
 }
-/******* Common Element CSS End *********/
 
-/* -------- title style ------- */
 .line-title {
-    position: relative;
-    width: 400px;
+    margin-left: 20px;
+    font-size: 30px;
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 10px; /* Espacio entre el ícono y el texto */
 }
-
-.line-title::before,
-.line-title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 4px;
-    border-radius: 2px;
-}
-
-.line-title::before {
-    width: 100%;
-    background: #f2f2f2;
-}
-
-.line-title::after {
-    width: 32px;
-    background: #e73700;
-}
+/******* Common Element CSS End *********/
 
 /******* Middle section CSS Start ******/
 /* -------- Landing page ------- */
