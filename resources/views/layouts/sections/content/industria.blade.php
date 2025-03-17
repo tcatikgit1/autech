@@ -2,7 +2,7 @@
     <div class="image_container">
         <h4>Servicio</h4>
         <h1>Industria 4.0</h1>
-        <img src="{{'assets/img/ImgService.png'}}" alt="img">
+        <img src="{{'assets/img/services/ImgIndustria.png'}}" alt="img">
     </div>
     <div class="content_peritajes">
         <div class="text_column">

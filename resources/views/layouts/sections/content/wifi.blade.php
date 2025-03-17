@@ -13,6 +13,6 @@
             Wifi por pago o ticketing</p>
     </div>
     <div class="image2">
-        <img src="{{'assets/img/ImgService.png'}}" alt="img">
+        <img src="{{'assets/img/services/ImgRedes.png'}}" alt="img">
     </div>
 </div>

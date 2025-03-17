@@ -1,7 +1,7 @@
 <!-- Título de la sección con logo -->
 <section class="section-title">
     <div class="title-container" id="servicios">
-        <img src="{{ 'assets/img/caroussel/logoService.png' }}" alt="Logo de la sección" class="logo1">
+        <img src="{{ 'assets/img/services/logoService.png' }}" alt="Logo de la sección" class="logo1">
         <h1>Nuestros servicios</h1>
     </div>
 </section>
