@@ -12,6 +12,7 @@
 @section('page-script')
     @vite([
     'resources/js/partners.js',
+    'resources/js/carrousel.js',
 ])
 @endsection
 
