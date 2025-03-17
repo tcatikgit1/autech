@@ -4,7 +4,7 @@
     </div>
     <div class="contact-info">
         +34 123 123 123
-        <a href="#contacto"><i class="fa-solid fa-up-right-from-square"></i> contáctanos</a>
+        <a href="#contacto"><i class="fa-solid fa-up-right-from-square"></i> Contáctanos</a>
         <a href="#">Dónde estamos</a>
     </div>
 </div>
