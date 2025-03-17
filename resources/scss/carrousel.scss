@@ -74,30 +74,26 @@
 
 
 
-
-
-
-
 @charset "utf-8";
 
 /******* Fonts Import Start **********/
-// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 /********* Fonts Face CSS End **********/
 
 /******* Common Element CSS Start ******/
-// * {
-//     margin: 0px;
-//     padding: 0px;
-// }
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-// body {
-//     font-family: "Roboto", sans-serif;
-//     font-size: 16px;
-// }
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
 
-// .clear {
-//     clear: both;
-// }
+.clear {
+    clear: both;
+}
 
 img {
     max-width: 100%;
@@ -139,11 +135,40 @@ h2 {
     text-transform: capitalize;
 }
 
-h3 {
-    margin: 0 0 10px;
-    font-size: 28px;
-    line-height: 36px;
-}
+// h3 {
+//     margin: 0 0 10px;
+//     font-size: 28px;
+//     line-height: 36px;
+// }
+
+// h3 {
+//     margin: 0 0 10px; /* Reduce el margen inferior para darle más espacio a los títulos */
+//     font-size: 28px;
+//     line-height: 36px;
+//     position: relative;
+//     z-index: 8;
+// }
+
+// .game-section .item-desc h3 {
+//     transform: translateY(-10px); /* Mueve el título hacia arriba */
+// }
+
+// .game-section .item-desc {
+//   padding-top: 10px; /* Ajusta el relleno superior para mover el título más arriba */
+// }
+
+
+
+// .game-section .item-desc h3 {
+//     margin: 0 0 10px;
+//     font-size: 28px;
+//     line-height: 36px;
+//     position: relative;
+//     z-index: 1;
+//     /* Evitamos que se oculte el título y está completamente visible */
+//     transform: translateY(0); /* Asegura que no se desplace hacia abajo */
+// }
+
 
 button {
     outline: none !important;
@@ -205,7 +230,7 @@ button {
     cursor: pointer;
 }
 
-.game-section .item.active {
+.game-section .item:hover {
     width: 500px;
     box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
@@ -223,18 +248,17 @@ button {
 }
 
 .game-section .item-desc {
-    padding: 0 24px 12px;
-    color: #fff;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    transform: translateY(calc(100% - 54px));
-    -webkit-transform: translateY(calc(100% - 54px));
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
+  padding: 0 0px 0px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: visible; /* Cambio aquí: Hace visible el contenido de h3 cuando no se pasa el ratón */
+  transform: translateY(0); /* Asegura que el título no se desplace hacia abajo */
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
 }
 
-.game-section .item.active .item-desc {
+.game-section .item:hover .item-desc {
     transform: none;
     -webkit-transform: none;
 }
@@ -247,7 +271,7 @@ button {
     -webkit-transition: all 0.4s ease-in-out 0.2s;
 }
 
-.game-section .item.active .item-desc p {
+.game-section .item:hover .item-desc p {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -284,7 +308,7 @@ button {
         height: 360px;
     }
 
-    .game-section .item.active {
+    .game-section .item:hover {
         width: 400px;
     }
 
@@ -320,7 +344,7 @@ button {
         height: 330px;
     }
 
-    .game-section .item.active {
+    .game-section .item:hover {
         width: 360px;
     }
 
@@ -360,7 +384,7 @@ button {
         height: 280px;
     }
 
-    .game-section .item.active {
+    .game-section .item:hover {
         width: 270px;
         box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
         -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
