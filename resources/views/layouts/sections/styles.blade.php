@@ -23,7 +23,6 @@
     'resources/assets/css/demo.css'
 ]) --}}
 
-
 <!-- Vendor Styles -->
 @vite([
     'resources/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.scss',
@@ -31,8 +30,6 @@
     'resources/css/app.scss',
     'resources/scss/navbar.scss',
     'resources/scss/footer.scss',
-
-
 ])
 @yield('vendor-style')
 

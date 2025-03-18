@@ -1,10 +1,9 @@
 @extends('layouts/commonMaster')
 
 @section('layoutContent')
-
     <div class="main-container">
         <!-- Navbar -->
-         <div class="navbar-container">
+        <div class="navbar-container">
             @include('layouts/sections/navbar/navbar')
         </div>
 
@@ -18,5 +17,4 @@
             @include('layouts/sections/footer/footer')
         </div>
     </div>
-
 @endsection

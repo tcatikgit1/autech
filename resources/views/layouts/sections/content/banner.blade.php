@@ -3,7 +3,7 @@
     <div id="particles-js"></div>
 
     <!-- Imagen de fondo -->
-    <img src="{{'assets/img/banner.png'}}" alt="Banner de bienvenida">
+    <img src="{{ 'assets/img/banner.png' }}" alt="Banner de bienvenida">
 
     <!-- Contenedor del texto -->
     <div class="text-container">

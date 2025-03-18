@@ -58,14 +58,14 @@ button {
 }
 
 .game-section .item-desc {
-  padding: 0 20px 0px;
-  color: #fff;
-  position: relative;
-  z-index: 1;
-  overflow: visible; /* Cambio aquí: Hace visible el contenido de h3 cuando no se pasa el ratón */
-  transform: translateY(0); /* Asegura que el título no se desplace hacia abajo */
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
+    padding: 0 20px 0px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: visible; /* Cambio aquí: Hace visible el contenido de h3 cuando no se pasa el ratón */
+    transform: translateY(0); /* Asegura que el título no se desplace hacia abajo */
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
 }
 
 .game-section .item:hover .item-desc {

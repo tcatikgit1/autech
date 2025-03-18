@@ -21,7 +21,6 @@
     justify-content: center;
     text-align: center;
     flex-grow: 1;
-    text-align: center;
 }
 
 .footer .footer-links div {
@@ -52,26 +51,18 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-
     }
 
     .footer .logo img {
-
         margin-bottom: 20px;
     }
 
     .footer .footer-links {
         flex-direction: column;
         justify-content: center;
-            text-align: center;
-            align-items: flex-start;
-            margin-left: 13rem;
-            gap: 0px;
-
+        text-align: center;
+        align-items: flex-start;
+        margin-left: 13rem;
+        gap: 0px;
     }
-
-
 }
-
-
-

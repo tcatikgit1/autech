@@ -79,7 +79,7 @@
     display: flex;
     align-items: left;
     padding: 12px 8px;
-    background-color: #25D366;
+    background-color: #25d366;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -122,20 +122,21 @@
 }
 
 .checkbox-container a {
-    color: #007BFF;
+    color: #007bff;
     text-decoration: none;
 }
 
 .checkbox-container a:hover {
     text-decoration: underline;
 }
+
 .whatsapp-link {
     display: flex;
     align-items: center; /* Alinear verticalmente */
     justify-content: center;
     gap: 10px; /* Espacio entre el icono y el texto */
     padding: 8px 12px;
-    background-color: #25D366;
+    background-color: #25d366;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -160,99 +161,100 @@
     display: block; /* Asegura que ocupe todo el ancho disponible */
     margin-left: auto; /* Lo empuja hacia la derecha */
 }
+
 #w {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 280%;
-  z-index: -1;
-  margin-left: 15rem;
-  transition: transform 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280%;
+    z-index: -1;
+    margin-left: 15rem;
+    transition: transform 0.3s ease;
 }
 
 @media (max-width: 1360px) {
-  #w {
-    width: 80%; /* Reducir más el tamaño */
-    height: 150%; /* Ajuste de altura */
-    margin-left: 0;
-    bottom: 0; /* Anclar al fondo */
-    right: 0; /* Anclar a la derecha */
-    transform: scale(0.6); /* Reducir el tamaño al 60% */
-  }
+    #w {
+        width: 80%; /* Reducir más el tamaño */
+        height: 150%; /* Ajuste de altura */
+        margin-left: 0;
+        bottom: 0; /* Anclar al fondo */
+        right: 0; /* Anclar a la derecha */
+        transform: scale(0.6); /* Reducir el tamaño al 60% */
+    }
 
-  .formulario {
-    width: 50%;
-  }
+    .formulario {
+        width: 50%;
+    }
 
-  .contacto-info {
-    width: 50%;
-    margin-top: 20px;
-  }
+    .contacto-info {
+        width: 50%;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 768px) {
-  #w {
-    width: 70%; /* Hacer la imagen aún más pequeña */
-    height: 100%; /* Ajustar la altura */
-    margin-left: 0;
-    bottom: 0; /* Anclar al fondo */
-    right: 0; /* Anclar a la derecha */
-    transform: scale(0.5); /* Reducir el tamaño al 50% */
-  }
+    #w {
+        width: 70%; /* Hacer la imagen aún más pequeña */
+        height: 100%; /* Ajustar la altura */
+        margin-left: 0;
+        bottom: 0; /* Anclar al fondo */
+        right: 0; /* Anclar a la derecha */
+        transform: scale(0.5); /* Reducir el tamaño al 50% */
+    }
 
-  .contacto {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0;
-  }
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
 
-  .formulario {
-    width: 80%;
-    max-width: 500px;
-    margin-bottom: 20px;
-  }
+    .formulario {
+        width: 80%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
 
-  .contacto-info {
-    width: 80%;
-    margin-top: 20px;
-  }
+    .contacto-info {
+        width: 80%;
+        margin-top: 20px;
+    }
 
-  .whatsapp a {
-    width: 100%;
-  }
+    .whatsapp a {
+        width: 100%;
+    }
 
-  .whatsapp img {
-    display: none;
-  }
+    .whatsapp img {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
-  #w {
-    width: 60%; /* Reducir aún más */
-    height: 80%;
-    margin-left: 0;
-    bottom: 0; /* Anclar al fondo */
-    right: 0; /* Anclar a la derecha */
-    transform: scale(0.4); /* Reducir el tamaño al 40% */
-  }
+    #w {
+        width: 60%; /* Reducir aún más */
+        height: 80%;
+        margin-left: 0;
+        bottom: 0; /* Anclar al fondo */
+        right: 0; /* Anclar a la derecha */
+        transform: scale(0.4); /* Reducir el tamaño al 40% */
+    }
 
-  .formulario {
-    width: 100%;
-    max-width: none;
-  }
+    .formulario {
+        width: 100%;
+        max-width: none;
+    }
 
-  .contacto-info {
-    width: 100%;
-    display: block;
-  }
+    .contacto-info {
+        width: 100%;
+        display: block;
+    }
 
-  .whatsapp a {
-    width: 100%;
-  }
+    .whatsapp a {
+        width: 100%;
+    }
 
-  .whatsapp img {
-    width: 35px;
-    height: 35px;
-  }
+    .whatsapp img {
+        width: 35px;
+        height: 35px;
+    }
 }

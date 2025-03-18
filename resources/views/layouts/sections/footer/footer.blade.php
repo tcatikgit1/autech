@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="logo">
-        <img src="{{'assets/img/LogoNegro.png'}}" alt="logo">
+        <img src="{{ 'assets/img/LogoNegro.png' }}" alt="logo">
     </div>
     <div class="footer-links">
         <div>

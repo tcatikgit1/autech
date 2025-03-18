@@ -11,11 +11,10 @@
 
 <div class="navbar">
     <div class="logo">
-        <img src="{{'assets/img/Logo.png'}}" alt="logo">
+        <img src="{{ 'assets/img/Logo.png' }}" alt="logo">
         <div class="nav-links">
             <a href="#servicios">SERVICIOS</a>
             <a href="#contacto">CONTACTO</a>
         </div>
     </div>
 </div>
-
