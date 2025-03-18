@@ -1,10 +1,8 @@
-
-
 .information {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 3rem;
+    padding: 0.8rem;
     align-items: center;
 }
 
@@ -12,8 +10,9 @@
     flex: 1;
     font-size: 24px;
     padding-right: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    margin-left: 100px;
 }
 
 .text h2 {
@@ -32,7 +31,7 @@
 .image img {
     width: 100%;
     height: auto;
-    max-width: 900px;
+    max-width: 700px;
     object-fit: cover;
     margin-bottom: 2rem;
 }
@@ -45,20 +44,18 @@
     margin-bottom: 2rem;
 }
 
-
-
 .text2 {
     flex: 1;
     font-size: 24px;
     padding-right: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    margin-left: 100px;
 }
 
 .text2 h4 {
     font-size: 25px;
-
 }
-
 
 .image2 {
     margin-top: 5rem;
@@ -74,10 +71,8 @@
     max-width: 900px;
     object-fit: cover;
     margin-bottom: 2rem;
-    border-radius: 15px;
+    border-radius: 8px;
 }
-
-
 
 @media (max-width: 1200px) {
     .information {
@@ -97,7 +92,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
 }
 
@@ -105,12 +100,14 @@
     font-size: 25px;
     margin-bottom: 0.5rem;
     align-self: flex-start;
+    margin-left: 100px;
 }
 
 .image_container h1 {
     font-size: 35px;
     margin-bottom: 1rem;
     align-self: flex-start;
+    margin-left: 100px;
 }
 
 .image_container img {
@@ -119,7 +116,7 @@
     max-width: 900px;
     object-fit: cover;
     margin-bottom: 2rem;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 .content_peritajes {
@@ -134,7 +131,6 @@
     text-align: left;
     font-size: 24px;
     padding: 20px 20px 0 20px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
 }
-
