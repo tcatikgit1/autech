@@ -15,7 +15,8 @@
     @vite([
     'resources/js/partners.js',
     'resources/js/carrousel.js',
-    'resources/js/banner.js'
+    'resources/js/banner.js',
+    'resources/js/contact.js'
 ])
 @endsection
 
